@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Object</title>
+</head>
+<body>
+<script type="module">
+    import * as NamaNami from "./scripts/module-object.js"; // Rekomendasi kalo nanti data nya kebanyakan yang harus di export dari sebuah module bisa di wrap dalam satu object (Disini kasusnya NamaNami)
+
+    console.info(NamaNami.firstName);
+    console.info(NamaNami.middleName);
+    console.info(NamaNami.lastName);
+    NamaNami.hello();
+
+    const person = new NamaNami.Person();
+
+</script>  
+</body>
+</html>
